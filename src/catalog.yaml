@@ -1,0 +1,12 @@
+version: 1
+samples:
+  - id: kernel-tier1-series
+    topic: kernel
+    path: kernel/python/tier1-series
+    runtime: python
+    status: draft
+  - id: weld-ss1m-receipt
+    topic: weld
+    path: weld/python/ss1m-receipt
+    runtime: python
+    status: draft
