@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a defect in the UMCP kernel / weld tooling
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a report. Please include the smallest reproducible case you can.
+
+  - type: input
+    id: version
+    attributes:
+      label: Commit / version
+      description: Git SHA, tag, or version string.
+      placeholder: "e.g., 3f2c1ab or v0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Paste a minimal code sample or steps to reproduce.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      description: Paste the full traceback or relevant logs.
+      render: text
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - kernel (Tier-1 compute)
+        - weld (SS1m / receipts)
+        - eid (prime_pi / checksum)
+        - contract / closures
+        - packaging / CI
+        - docs
+    validations:
+      required: true
