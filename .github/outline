@@ -1,0 +1,12 @@
+.github/
+  dependabot.yml
+  pull_request_template.md
+  SECURITY.md
+  workflows/
+    ci.yml
+    lint.yml
+    codeql-analysis.yml
+  ISSUE_TEMPLATE/
+    config.yml
+    bug_report.yml
+    feature_request.yml
